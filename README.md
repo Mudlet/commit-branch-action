@@ -2,6 +2,8 @@
 
 The purpose of this GitHub action is to auto-commit back any changes made to the branch through previous GitHub actions to a given branch.
 
+**Attention! This will force push to the named branch, so previous changes will be lost.**
+
 Use the GitHub action in the following way:
 
 ```
@@ -29,3 +31,4 @@ action "Auto-commit" {
 ```
 
 This ensures that you run your action only on the master branch. The `args` field is used as your commit message. To modify the branch name, commiter name, and e-mail, adapt the `env` values accordingly.
+
