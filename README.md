@@ -20,11 +20,11 @@ action "Auto-commit" {
   needs = ["Some action that changes files"]
   args = "This is an auto-commit"
   secrets = ["GITHUB_TOKEN"]
-  env = [
-    "USERNAME=mudlet-bot",
-    "USEREMAIL=info@mudlet.org",
-    "BRANCH_NAME=translation-updates"
-  ]
+  env = {
+    USERNAME = "mudlet-bot"
+    USEREMAIL = "info@mudlet.org"
+    BRANCH_NAME = "translation-updates"
+  }
 }
 ```
 
