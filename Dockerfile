@@ -1,7 +1,7 @@
 FROM alpine/git:1.0.7
 
 LABEL "name"="commit-branch"
-LABEL "maintainer"="Florian Scheel <keneanung@googlemail.com"
+LABEL "maintainer"="Florian Scheel <keneanung@googlemail.com>"
 LABEL "version"="1.0.0"
 
 LABEL "com.github.actions.name"="Auto-commit with branch for GitHub Actions"
